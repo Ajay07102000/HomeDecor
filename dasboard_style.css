@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
 }
-.main{
 
-}
 .header{
     height: 30px;
     width: 100%;
@@ -29,17 +27,161 @@
     color:white;
 }
 .navbar{
-    border: 1px solid black;
-    padding:10px;
-    height:110px;
-    width:100%;
+    border: 1px solid gray;
+    max-width: 100%;
+    overflow-x: auto;
+    padding:15px;
 }
 .logo{
-    border: 1px solid black;
+    border: none;
+    cursor: pointer;
     width: 200px;
     height: 50px;
     background:url(LOGO.avif);
     margin-left:100px;
-    background-size: cover;
+    background-size: cover;  
+}
+
+.Carousel{
+
+    object-fit: contain; /* Fit the entire image inside the container */
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    max-height: 100vh; 
+    
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; 
+}
+
+.text{
+    padding:5%;
+    display: flex;
+    align-items: center;
+    font-weight: var(--weight-700);
+    justify-content: center;
+    font-family: sans-serif;
+    /* font-family: var(--family-montserrat); */
+    font-size: 36px;
+    line-height: 1;
+    flex-direction: column;
+}
+
+.lower-text{
+    font-size: 22px;
+    font-weight: 520;
+    font-family: sans-serif;
+    /* font-family: var(--family-montserrat); */
+    margin: 30px 0px;
+}
+
+.card-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Wrap items to the next line if needed */
+  }
+  
+  .card {
+    width: 300px; 
+    height: 250px;
+    margin: 10px; /* Add some margin between cards */
+    text-align: center; /* Center text horizontally */
+    height: max-content;
+    cursor: pointer;
+    
+  }
+  
+
+  .card img:hover{
+    /* background: rgba(255, 255, 255, 0.511); */
+    /* box-shadow: 0px 4px 8px rgba(0,0,0,0.5); */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    transform: scale(1.1); /* Example: zoom in image on hover */
+  }
+
+  
+  .card img {
+    width: 100%; /* Make the image fill the card */
+    height: 250px; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.5s;
+  }
+
+  .img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .footer{
+    background-color: rgb(0, 0, 0);
+    width:100%;
+    margin-top: 249px;
+    height:124px;
+    position:sticky;
+    border-color: white;
+}
+.innerFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile{
+    background-color: white;
+    border-radius: 50%;
+    border:1px solid black;
+    height:28px;
+    width:28px;
+    text-align: center;
+}
+.links{
+    height: 30px;
+    width:120px;
+    border:1px solid black;
+    display: flex;
+    justify-content:space-between;
+    justify-items: center;
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+}
+.copyrights{
+    height:28px;
+    width:500px;
+    font-size: 18px;
+    display: flex;
+    justify-content:center;
+    justify-items: baseline;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.svg1,
+.svg2 {
+  vertical-align: middle;
+}
+
+.blankLink{
+    height:28px;
+    width:450px;
+    margin:5px;
+    display: flex;
+    justify-content: space-around;
+}
+.infoLink{
+    color: white;
     
 }
+  
+
+  
